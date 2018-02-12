@@ -27,26 +27,30 @@ $('.js-close-campaign').click(function() {
 // 	}
 // });
 
-var countClicks = 0;
-function clickMe(){
-	countClicks = countClicks + 1;
+// var countClicks = 0;
+// function clickMe(){
+// 	countClicks = countClicks + 1;
 	
-	if (countClicks == 1) {
-		$('.ball-move').css('background-color', 'red');
-    }
-	if (countClicks == 2) {
-    	$('.ball-move').css('background-color', 'blue');
-    }
-	if (countClicks == 3) {
-    	$('.ball-move').css('background-color', 'yellow');
-    }
-	if (countClicks == 4) {
-    	$('.ball-move').css('background-color', 'pink');
-	}
-	console.log(clickMe)
-// 11
-// 46
-}
+// 	if (countClicks == 1) {
+// 		$('.ball-move').css('top', '11%');
+// 		$('.ball-move').css('left', '36%');
+//     }
+// 	if (countClicks == 2) {
+//     	$('.ball-move').css('background-color', 'blue');
+//     }
+// 	if (countClicks == 3) {
+//     	$('.ball-move').css('background-color', 'yellow');
+//     }
+// 	if (countClicks == 4) {
+//     	$('.ball-move').css('background-color', 'pink');
+// 	}
+// 	console.log(clickMe)
+// // 11
+// // 46
+// }
+
+
+
 
 // открыть по таймеру 
 $(window).on('load', function () { 

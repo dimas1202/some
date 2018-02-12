@@ -12,20 +12,45 @@
 		<!-- <div class="button js-button-campaign"><span>Акция</span></div> -->
 	</main>
 	<div class="overlay js-overlay-campaign">
-		<div class="popup js-popup-campaign ball-move">
+		<div class="popup js-popup-campaign" onClick="clickMe()">
 			<div class="ball-cover ball-move">
 				<img src="./img//ball.png" alt="" class="ball">
 			</div>
-			<!-- <figure id="bridgeContainer">
-				<canvas id="bridge" width="460" height="56"></canvas>
-				<figcaption></figcaption>
-			</figure>
-			<!-- <h2>Внимание, акция!</h2>
-			На протяжении 40 лет BMW 3 серии представляет собой идеальное воплощение спортивного седана. В шестом поколении комбинация динамики, непревзойденной управляемости, инновационных функций и максимальной практичности впечатляет как никогда раньше. --> 
 			<div class="close-popup js-close-campaign"></div>
 		</div>
 	</div>
 
+	<script language="JavaScript" type="text/javascript">
+		
+
+	var countClicks = 0;
+	function clickMe(){
+		countClicks = countClicks + 1;
+		
+		if (countClicks == 1) {
+			$('.ball-move').css('top', '22%');
+			$('.ball-move').css('left', '70%');
+		}
+		if (countClicks == 2) {
+			$('.ball-move').css('top', '63%');
+			$('.ball-move').css('left', '65%');
+		}
+		if (countClicks == 3) {
+			$('.ball-move').css('top', '46%');
+			$('.ball-move').css('left', '66%');
+		}
+		if (countClicks == 4) {
+			$('.ball-move').css('top', '21%');
+			$('.ball-move').css('left', '47%');
+		}
+		if (countClicks == 5) {
+			$('.ball-move').css('top', '41%');
+			$('.ball-move').css('left', '47%');
+		}
+
+	}
+	</script>
+	<body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>
 </body>
