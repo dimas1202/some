@@ -1,0 +1,290 @@
+body {margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; }
+
+main {
+	width: 100%;
+	height: 100vh;
+	background-image: url(bg.png);
+	background-size: cover;
+	transition: all .2s ease;
+}
+
+.button {
+	width: 300px;
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+	background-color: #ff5252;
+	text-align: center;
+	cursor: pointer;
+} 
+
+.button span {
+	line-height: 60px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 800px;
+	height: 490px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	box-sizing: border-box;
+	background: url(t.png) no-repeat;
+	background-size: 100%;
+	color: #fff;
+	display: flex;
+	align-items: flex-end;
+}
+
+.close-popup {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+@media screen and (max-width: 455px) {
+	
+	.close-popup {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+@media screen and (max-width: 455px) {
+	
+	.close-popup:before {
+	width: 21px;
+	top: 5px;
+	left: 0px;
+	}
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+@media screen and (max-width: 455px) {
+	
+	.close-popup:after {
+	width: 21px;
+	top: 5px;
+	left: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.popup {
+		/* position: absolute; */
+		width: 100%;
+		height: 462px;
+		/* height: 100vh; */
+		font-size: 15px;
+		/* left: 50%; */
+		/* top: 50%; */
+		/* transform: translate(-50%, -50%); */
+	}
+}
+@media screen and (max-width: 660px) {
+	
+		.popup {
+			position: absolute;
+			width: 100%;
+			height: 400px;
+			font-size: 15px;
+			/* left: 50%; */
+			top: 52%;
+			/* transform: translate(-50%, -50%); */
+		}
+	}
+@media screen and (max-width: 620px) {
+	
+	.popup {
+		top: 58%;
+	}
+}
+@media screen and (max-width: 480px) {
+	
+	.popup {
+		top: 62%;
+	}
+}
+
+#bridge {
+  display: block;
+  margin: 0 auto;
+  background-image: url('d.jpg');
+  background-image: -webkit-image-set(url('d.jpg') 1x, url('d.jpg') 2x);
+  background-size: 100% ;
+  width: 100%;
+  max-width: 510px;
+  height: auto;
+  cursor: crosshair;
+	cursor: url(coin1.png) 20 20, crosshair;
+}
+@media screen and (max-width: 670px) {
+	
+	#bridge  {
+		cursor: url(coin2.png) 10 10, crosshair;
+	}
+}
+
+#bridgeContainer {
+  text-align: center;
+	font-family: Avenir, sans-serif;
+	margin: 0 auto;
+	padding-left: 1.5%;
+}
+@media screen and (max-width: 740px) {
+	
+	#bridgeContainer {
+	margin-bottom: 3%;
+	width: 80%;
+	height: auto;
+	}
+}@media screen and (max-width: 685px) {
+	
+	#bridgeContainer {
+	margin-bottom: 5%;
+	}
+}
+/* @media screen and (max-width: 680px) {
+	
+	#bridgeContainer {
+	margin-bottom: 0%;
+	}
+} */
+@media screen and (max-width: 665px) {
+	
+	#bridgeContainer {
+	margin-bottom: 8%;
+	width: 70%;
+	}
+}
+@media screen and (max-width: 660px) {
+	
+	#bridgeContainer {
+	margin-bottom: 0%;
+	}
+}
+@media screen and (max-width: 635px) {
+	
+	#bridgeContainer {
+	margin-bottom: 2%;
+	}
+}
+@media screen and (max-width: 620px) {
+	
+	#bridgeContainer {
+	margin-bottom: 4%;
+	}
+}
+@media screen and (max-width: 560px) {
+	
+	#bridgeContainer {
+	margin-bottom: 9%;
+	}
+}
+@media screen and (max-width: 525px) {
+	
+	#bridgeContainer {
+	margin-bottom: 15%;
+	}
+}
+@media screen and (max-width: 490px) {
+	
+	#bridgeContainer {
+	margin-bottom: 20%;
+	}
+}
+@media screen and (max-width: 455px) {
+	
+	#bridgeContainer {
+	margin-bottom: 27%;
+	}
+}
+@media screen and (max-width: 425px) {
+	
+	#bridgeContainer {
+	margin-bottom: 35%;
+	}
+}
+@media screen and (max-width: 400px) {
+	
+	#bridgeContainer {
+	margin-bottom: 40%;
+	}
+}
+@media screen and (max-width: 385px) {
+	
+	#bridgeContainer {
+	margin-bottom: 46%;
+	}
+}
+@media screen and (max-width: 365px) {
+	
+	#bridgeContainer {
+	margin-bottom: 50%;
+	}
+}
+@media screen and (max-width: 355px) {
+	
+	#bridgeContainer {
+	margin-bottom: 56%;
+	}
+}
+@media screen and (max-width: 345px) {
+	
+	#bridgeContainer {
+	margin-bottom: 62%;
+	}
+}
+@media screen and (max-width: 330px) {
+	
+	#bridgeContainer {
+	margin-bottom: 66%;
+	}
+}
+
+
+#bridgeContainer figcaption {
+  margin-top: 2rem;
+}

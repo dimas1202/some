@@ -1,0 +1,11 @@
+.main {
+    background-color:midnightblue;
+}
+
+#counter[data-counter="5"]:before{
+    color: #FF0000;
+     -webkit-animation: up 5s ease-in-out infinite;
+     -moz-animation: up 5s ease-in-out infinite;
+     -o-animation: up 5s ease-in-out infinite;
+     animation: up 5s ease-in-out infinite;
+ }

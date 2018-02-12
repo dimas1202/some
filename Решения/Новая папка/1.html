@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+ 
+<html>
+<head>
+  <title>Untitled</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    #myObj {
+  border: 1px;width: 100px;height: 100px;
+}
+ #counter:before{
+   content:  attr(data-counter);
+   margin: 20px;
+ }
+  #counter[data-counter="5"]:before{
+   color: #FF0000;
+    -webkit-animation: up 5s ease-in-out infinite;
+    -moz-animation: up 5s ease-in-out infinite;
+    -o-animation: up 5s ease-in-out infinite;
+    animation: up 5s ease-in-out infinite;
+}
+ 
+  @keyframes up {
+    50% {
+         -webkit-transform: scale(5);
+         -moz-transform: scale(5);
+         -o-transform: scale(5);
+         transform: scale(5);
+ 
+    }
+}
+@-webkit-keyframes up {
+    50% {
+         -webkit-transform: scale(5);
+         -moz-transform: scale(5);
+         -o-transform: scale(5);
+         transform: scale(5);
+ 
+    }
+}
+ 
+ 
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+  <script>
+$(function() {
+$('#myObj').click(function() {
+    var counter = $('#counter').attr("data-counter");
+    $('#counter').attr({"data-counter" : ++counter});
+  });
+ 
+});
+  </script>
+</head>
+ 
+<body>
+<div id="myObj">Click Me</div>
+<div id="counter" data-counter="0" ></div>
+ 
+ 
+</body>
+</html>

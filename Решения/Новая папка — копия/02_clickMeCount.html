@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><!-- saved from: http://web.my-study.info -->
+<head>
+<title>web.my-study.info</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<link rel="stylesheet" href="main.css">
+</head>
+<main>
+<script language="JavaScript" type="text/javascript">
+	
+
+var countClicks = 0;
+function clickMe(){
+	countClicks = countClicks + 1;
+	
+	if (countClicks == 1) {
+    	$('.dd').css('background-color', 'red');
+    }
+	if (countClicks == 2) {
+    	$('.dd').css('background-color', 'blue');
+    }
+	if (countClicks == 3) {
+    	$('.dd').css('background-color', 'yellow');
+    }
+	if (countClicks == 4) {
+    	$('.dd').css('background-color', 'pink');
+    }
+
+}
+</script>
+<body>
+	<div>
+		<div class="dd" onClick="clickMe()"></div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
